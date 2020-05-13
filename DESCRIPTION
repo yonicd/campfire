@@ -1,8 +1,8 @@
 Package: campfire
 Type: Package
 Title: Utility to do warmup for cmdstanr
-Version: 0.1.0
-Author@R:  
+Version: 0.1.1
+Author@R: 
     c(person(given = "Ben", family = "Bales", role = c("aut", "cre"),
            email = "bbbales2@gmail.com"))
 Description: This is an experimental package for evaluating a proposed warmup
@@ -10,9 +10,10 @@ Description: This is an experimental package for evaluating a proposed warmup
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-Depends: tidyverse,
-  rstan (>= 2.19.2),
-  nlshrink,
-  cmdstanr
+Depends: R (>= 3.6.0)
+Imports: rstan (>= 2.19.2),tibble,readr,stats,utils,nlshrink,inline,cmdstanr
+Remotes:
+  stan-dev/cmdstanr
 Suggests: 
     testthat (>= 2.1.0)
+RoxygenNote: 7.1.0
